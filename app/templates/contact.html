@@ -1,0 +1,65 @@
+{% extends "nav.html" %}
+
+{% block content %}
+<link type="text/css" href="static/contact.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<title>Contact</title>
+
+<body>
+<div id="ensemble">
+
+<div id="foot">
+    <div id="formulaire">
+    <h1>Formulaire de contact</h1>
+    <form action="{{ url_for('contact') }}" method=post>
+        {% for message in get_flashed_messages() %}
+        <div class="flash">{{ message }}</div>
+        {% endfor %}
+
+
+        {{ form.hidden_tag() }}
+
+        <p>{{ form.nom.label }}<br>
+        {{ form.nom }}</p>
+
+
+        <p>{{ form.email.label }}<br>
+        {{ form.email }}</p>
+
+
+        <p>{{ form.sujet.label }}<br>
+        {{ form.sujet }}</p>
+
+        <p>{{ form.message.label }}<br>
+        {{ form.message (rows='10',cols='60')}}</p>
+
+        <p id="envoyer">{{ form.envoyer }}</p>
+
+    </form>
+</div>
+    <div id="info">
+        <h1>Information</h1>
+        <h4>Adresse</h4><p>12 rue des Filles du Calvaire <br> 75011 <br>Paris</p>
+        <h4>Telephone</h4>
+        <p>06 86 90 94 62</p>
+        <h4>Adresse email</h4>
+        <p><a id="mail" href="mailto: theotim@outlook.fr"> theotim@outlook.fr</a></p>
+
+        <div id="btn">
+            <button>Facebook</button>
+            <button>Instagram</button>
+            <button>Twitter</button>
+        </div>
+    </div>
+
+    <div id="horaire">
+        <h1>Horaire</h1>
+        <p><b>Lundi au Samedi:</b> 7h-19h</p>
+        <p><b>Dimanche:</b> Fermé</p>
+    </div>
+</div>
+
+
+</div>
+</body>
+{% endblock %}

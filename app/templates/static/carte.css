@@ -1,0 +1,44 @@
+* {
+    font-family: "Montserrat";
+}
+
+body {
+    background: url('image/milkkk.png') no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#jus {
+    margin-top: 30px;
+}
+
+#milk {
+    margin-top: 30px;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1em;
+}
+@media screen and (max-width:1050px){
+    .ingredient {
+        margin-top: 50px;
+    }
+    #content {
+        margin-top: 150px;
+    }
+    h1 {
+        margin-top: 50px;
+    }
+}

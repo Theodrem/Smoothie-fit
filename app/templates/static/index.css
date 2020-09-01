@@ -1,0 +1,85 @@
+* {
+    font-family: "Montserrat";
+}
+body {
+    background: url('image/acc.png');
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+}
+
+.titre {
+    font-weight: bold;
+    color: #fff;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: bold;
+}
+
+#titre{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 200px;
+   justify-content: left;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-size: 2em;
+    background: rgba(255, 102, 102, 0.3);
+    width: 200px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.b {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn {
+     text-align: center;
+}
+
+button:hover {
+    background: rgb(255, 102, 102);
+
+}
+
+#content {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+@media screen and (max-width:1050px){
+    h1 {
+    font-size: 7em;
+    }
+    h3 {
+    font-size: 5em;
+    }
+    button {
+    font-size: 5em;
+    width: 400px;
+    }
+    #content{
+    margin-top: 500px;
+    }
+
+
+}

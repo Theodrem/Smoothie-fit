@@ -14,10 +14,11 @@
             <li><a href="{{ url_for('contact') }}">Contact</a></li>
             {% if current_user.is_anonymous %}
                <li><a href="{{ url_for('login') }}">Connexion</a></li>
+               <li><a href="{{ url_for('register') }}">S'enregistrer</a></li>
             {% else %}
                <li><a href="{{ url_for('logout') }}">Déconnexion</a></li>
-            {% endif %}
-               <li><a href="{{ url_for('register') }}">S'enregistrer</a></li>
+
+
     </ul>
     <div class="burger">
         <div class="line1"></div>

@@ -1,6 +1,5 @@
 * {
     font-family: Montserrat;
-    color: white;
 }
 
 body {
@@ -13,6 +12,7 @@ body {
 
 h1 {
     font-size: 3em;
+    color: white;
 }
 #champ {
     margin-top: 50px;
@@ -22,6 +22,11 @@ p {
     font-size: 2em;
     margin-top: 40px;
 }
+
+label {
+   color: white;
+}
+
 input[type=submit] {
     background: rgb(255, 102, 102);
     color: white;
@@ -43,8 +48,8 @@ input[type=submit] {
     font-size: 5em;
     }
     input {
-        height: 60px;
-        width: 450px;
+    height: 60px;
+    width: 450px;
     }
     input[type=submit] {
        height: 60px;
